@@ -1,0 +1,32 @@
+body {@include verdana;}
+
+a {
+	@include tr-03;
+}
+
+h1 {
+	font-size: 48px;
+	color: $c-navy;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 34px;
+	line-height: 42px;
+	color: $c-navy;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 28px;
+	line-height: 42px;
+	color: $c-navy;
+	// text-transform: uppercase;
+	// letter-spacing: .05em;
+	font-weight: normal;
+}

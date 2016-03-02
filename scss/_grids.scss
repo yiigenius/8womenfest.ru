@@ -1,0 +1,280 @@
+@import "susy";
+
+$susy: (
+	columns: 12,
+	gutters: .25,
+	math: fluid,
+	output: float,
+	gutter-position: after,
+	column-width: false,
+	container-position: center,
+	container: 71.250em, // 1140px
+
+	debug: (
+		image: show,
+		// output: background,
+		output: overlay,
+		toggle: top right,
+		color: rgba(#c00, .25),
+		)
+	);
+
+.index-wrapper {
+	@include container();
+	z-index: 2;
+	position: relative;
+}
+
+.left-col {
+	@include span(3);
+	z-index: 10;
+
+	&__logo {
+		width: 80%;
+		padding: 40px 0;
+	}
+}
+
+.right-col {
+	@include span(9 last);
+}
+
+.news {
+
+	&-item {
+		@include span(4 of 9);
+
+		&:nth-of-type(2n) {
+			@include span(4 of 9 last);
+		}
+
+		&__img {
+			@include span(3 of 4);
+			display: block;
+			float: none;
+			min-width: 270px;
+			margin-bottom: 20px;
+		}
+
+		&__date {
+			margin-bottom: 20px;
+		}
+
+		&__title {
+			margin-bottom: 20px;
+			display: block;
+		}
+	}
+
+	&-clear {
+		clear: both;
+		margin: 40px 0;
+	}
+}
+
+.i-jury {
+	z-index: 3;
+	position: relative;
+
+	&__center {
+		@include container();
+	}
+
+	&__item {
+		@include span(3);
+		margin-bottom: 40px;
+		height: 240px;
+
+		&:nth-of-type(4n) {
+			@include span(3 last);
+			margin-bottom: 40px;
+		}
+	}
+
+	&__photo {
+		width: 120px;
+		height: 120px;
+		margin: 0 auto;
+		overflow: hidden;
+		margin-bottom: 30px;
+
+		a {
+			width: 118px;
+			height: 118px;
+			border-radius: 59px;
+			display: block;
+			overflow: hidden;
+		}
+	}
+
+	&__title {
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+.info-parthners {
+	z-index: 3;
+	position: relative;
+	padding: 40px 0;
+
+	&__center {
+		@include container();
+	}
+
+	&__img {
+		img {width: 100%;}
+	}
+}
+
+.footer {
+	z-index: 3;
+	position: relative;
+	padding: 40px 0;
+
+	&__center {
+		@include container();
+	}
+
+	&__left-col {
+		@include span(4);
+	}
+
+	&__social {
+		@include span(4);
+	}
+
+	&__right-col {
+		@include span(4 last);
+	}
+}
+
+.jury {
+	margin-bottom: 60px;
+	overflow: hidden;
+
+	&__left-col {
+		@include span(3 of 9);
+	}
+
+	&__photo {
+		width: 240px;
+		height: 240px;
+		overflow: hidden;
+		border-radius: 120px;
+
+		@include MQ(M) {
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+		}
+	}
+
+	&__right-col {
+		@include span(6 of 9 last);
+	}
+}
+
+.parthners {
+
+	&__item {
+		margin-bottom: 40px;
+		clear: both;
+		overflow: hidden;
+	}
+
+	&__logo {
+		@include span(3 of 9);
+
+		&-box {
+			width: 95%;
+
+			img {width: 100%;}
+		}
+	}
+
+	&__text {
+		@include span(6 of 9 last);
+	}
+}
+
+.program {
+	margin-bottom: 60px;
+
+	&__date {
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		clear: both;
+		margin-bottom: 40px;
+		overflow: hidden;
+	}
+
+	&__ticket {
+		@include span(2 of 9);
+	}
+
+	&__info {
+		@include span(7 of 9 last);
+	}
+}
+
+.press {
+	margin-bottom: 60px;
+
+	&__item {
+		clear: both;
+		padding: 10px;
+		overflow: hidden;
+	}
+
+	&__title {
+		@include span(7 of 9);
+		display: block;
+	}
+
+	&__date {
+		@include span(2 of 9 last);
+	}
+}
+
+.movies {
+	margin-bottom: 60px;
+
+	&__item {
+		@include gallery(3 of 9);
+		margin-bottom: 40px;
+	}
+
+	&__photo {
+		display: block;
+		height: 140px;
+	}
+}
+
+.director {
+	padding: 60px 0;
+
+	&__center {
+		@include container();
+	}
+
+	&__item {
+		@include span(9 last);
+	}
+
+	&__left-col {
+		@include span(3 of 9);
+	}
+
+	&__img {
+		@include span(2 of 3);
+		height: 120px;
+		margin-bottom: 20px;
+	}
+
+	&__right-col {
+		@include span(6 of 9 last);
+	}
+}

@@ -1,0 +1,311 @@
+.jury {
+	&__photo {
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__info {
+		font-size: 17px;
+		line-height: 1.5em;
+	}
+}
+
+.parthners {
+
+	&__logo {
+		&-box {
+			background-color: $light;
+			border-radius: 50%;
+			border: 2px solid $c-blue-light;
+		}
+	}
+
+	&__text {
+		font-size: 17px;
+		line-height: 1.5em;
+	}
+}
+
+.news-view {
+	margin-bottom: 40px;
+
+	&__date {
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+
+	&__description {
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.5em;
+		margin-bottom: 30px;
+	}
+
+	.fotorama {
+		margin-bottom: 40px;
+	}
+
+	&__text {
+		font-size: 17px;
+		line-height: 1.5em;
+	}
+}
+
+.program {
+
+	&__ticket {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 16px;
+		background-image: url(../i/btn_ticket.svg);
+		background-size: 95%;
+		background-repeat: no-repeat;
+		background-position: center;
+		min-width: 140px;
+
+		a {
+			color: darken($c-blue-light,30%);
+			text-decoration: none;
+			height: 40px;
+			padding-top: 10px;
+			display: block;
+
+			&:hover {
+				color: $c-red;
+				background-color: $light;
+			}
+		}
+	}
+
+	&__time {
+		font-weight: bold;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	&__place {
+		font-size: 14px;
+		color: darken($c-blue-light,30%);
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 1.5em;
+
+		a {
+			color: $c-red;
+
+			&:hover {color: $c-navy;}
+		}
+	}
+}
+
+.content {
+	margin-bottom: 40px;
+
+	&-img {
+		margin-bottom: 40px;
+
+		img {width: 100%;}
+	}
+
+	p {
+		font-size: 17px;
+		line-height: 1.5em;
+	}
+
+	ul {
+		list-style: disc;
+		line-height: 1.5em;
+		margin-left: 60px;
+		font-size: 17px;
+	}
+
+	ol {
+		list-style: decimal;
+		line-height: 1.5em;
+		margin-left: 60px;
+		font-size: 17px;
+	}
+
+	a {
+		color: $c-navy;
+
+		&:hover {
+			color: $c-red;
+		}
+	}
+}
+
+.btn-download {
+	border: 2px solid $c-blue-light;
+	background-color: $light;
+	@include georgia;
+	font-size: 18px;
+	color: $c-navy;
+	text-decoration: none;
+	display: block;
+	padding: 15px 20px;
+	text-align: center;
+	margin: 40px 0;
+
+	&:hover {
+		border-color: $c-red;
+		color: $c-red;
+	}
+}
+
+.press {
+	font-size: 16px;
+
+	&__item {
+	@include tr-01;
+
+		&:hover {
+			background-color: $light;
+		} 
+	}
+
+	&__title {
+		text-decoration: underline;
+		color: $c-navy;
+		line-height: 1.3em;
+
+		&:hover {
+			color: $c-red;
+		}
+	}
+
+	&__date {
+		font-size: 14px;
+		color: darken($c-blue-light,30%);
+	}
+}
+
+.questionnaire {
+	padding: 0 40px;
+
+	p {
+		line-height: 1.5em;
+		text-align: center;
+	}
+
+	&__item {
+		margin-bottom: 12px;
+		clear: both;
+	}
+
+	&__title {
+		font-size: 16px;
+		text-align: right;
+		width: 30%;
+		float: left;
+		margin-right: 5%;
+		padding-top: 10px;
+	}
+
+	&__input {
+		width: 65%;
+		overflow: hidden;
+
+		input {
+			width: 90%;
+			font-size: 18px;
+			border: 2px solid $c-blue-light;
+			padding: 10px;
+		}
+	}
+
+	.btn_send_red {
+		width: 62.35%;
+		background-color: $c-red;
+		margin-left: 35%;
+		display: block;
+		text-align: center;
+		padding: 15px 0;
+		font-weight: bold;
+		color: $light;
+		text-decoration: none;
+		font-size: 14px;
+		letter-spacing: .13em;
+
+		&:hover {
+			background-color: darken($c-red,10%);
+		}
+	}
+}
+
+.movies {
+	&__item {
+		line-height: 1.5em;
+	}
+
+	&__photo {
+		background-size: cover;
+		margin-bottom: 10px;
+		border: 2px solid $c-blue-light;
+
+		&:hover {
+			opacity: .75;
+		}
+	}
+
+	&__title {
+		@include georgia;
+		font-size: 22px;
+		color: $c-navy;
+		text-decoration: none;
+		margin-bottom: 10px;
+
+		&:hover {
+			color: $c-red;
+		}
+	}
+
+	&__description {
+		font-size: 14px;
+	}
+
+	&__big-photo {
+		border: 2px solid $c-blue-light;
+		margin-bottom: 40px;
+
+		img {width: 100%;vertical-align:bottom;}
+	}
+
+	&__info {
+		font-size: 14px;
+		color: darken($c-blue-light,30%);
+		margin-bottom: 40px;
+		line-height: 1.5em;
+	}
+
+	&__text {
+		line-height: 1.5em;
+		margin-bottom: 40px;
+		font-size: 17px;
+	}
+}
+
+.director {
+	background-color: rgba($dark,.1);
+
+	&__movies {
+		font-size: 13px;
+		line-height: 1.5em;
+	}
+
+	&__right-col {
+		p {
+			font-size: 17px;
+			line-height: 1.5em;
+		}
+	}
+
+	&__img {
+		background-size: cover;
+		background-repeat: no-repeat;
+		border: 2px solid $c-blue-light;
+	}
+}

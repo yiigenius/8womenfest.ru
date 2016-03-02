@@ -1,0 +1,164 @@
+.body-pttrn {
+	background-image: url(../i/pttrn_gray.png);
+}
+
+.top-title {
+	text-align: center;
+	@include georgia;
+	font-size: 33px;
+	color: $c-navy;
+	padding: 90px 0 45px 0;
+	background-image: url(../i/Under_title.svg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	margin-bottom: 65px;
+
+	&__index {
+		padding: 40px 0 30px 0;
+	}
+}
+
+.left-col {
+
+	&__nav {
+		margin-left: 40px;
+	}
+
+	.nav-item {
+		@include georgia;
+		font-size: 16px;
+		text-transform: uppercase;
+		line-height: 40px;
+
+		a {
+			text-decoration: none;
+			color: $dark;
+
+			&:hover {
+				color: $c-red;
+			}
+		}
+
+		&.active a {color: $c-red;}
+	}
+}
+
+.tabs {
+	border-bottom: 2px solid $c-red;
+	margin-bottom: 40px;
+	overflow: hidden;
+
+	ul {
+		li {
+			display: block;
+			float: left;
+			background-color: $light;
+			margin-right: 2px;
+			@include georgia;
+			font-size: 22px;
+			@include tr-03;
+
+			a {
+				text-decoration: none;
+				color: $c-navy;
+				padding: 10px 30px;
+				display: block;
+			}
+
+			&:hover {
+				background-color: $c-blue-light;
+			}
+
+			&.active {
+				background-color: $c-red;
+
+				a {color: $light;}
+			}
+		}
+	}
+}
+
+.pagination {
+	padding: 40px 0;
+	text-align: center;
+
+	&__item {
+		display: inline-block;
+		border: 2px solid $c-blue-light;
+		margin: 0 2px;
+		@include tr-03;
+
+		a {
+			display: block;
+			line-height: 40px;
+			font-size: 18px;
+			font-weight: bold;
+			text-decoration: none;
+			color: darken($c-blue-light,30%);
+			width: 40px;
+			height: 40px;
+		}
+
+		&:hover {
+			border-color: $c-red;
+			background-color: $light;
+
+			a {color: $c-red;}
+		}
+
+		&.active {
+			background-color: $c-red;
+			border-color: $c-red;
+
+			a {color: $light;}
+		}
+	}
+}
+
+.footer {
+	background-color: $c-navy;
+	color: $light;
+	max-height: 125px;
+	line-height: 1.5em;
+
+	&__left-col {
+		font-size: 14px;
+
+		a {
+			color: $light;
+
+			&:hover {
+				color: $c-blue-light;
+			}
+		}
+	}
+
+	&__social {
+		text-align: center;
+
+		&-item {
+			width: 40px;
+			height: 40px;
+			margin: 0 5px;
+
+			img {width: 40px;}
+
+			&:hover {
+				opacity: .75;
+			}
+		}
+	}
+
+	&__right-col {
+		text-align: right;
+		font-size: 14px;
+
+		a {
+			color: $light;
+
+			&:hover {
+				color: $c-blue-light;
+			}
+		}
+	}
+}

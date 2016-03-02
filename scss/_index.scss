@@ -1,0 +1,141 @@
+.index-pttrn-overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	background-image: url(../i/pttrn.png);
+	background-color: rgba($light,.85);
+}
+
+.i-parthners {
+	position: absolute;
+	z-index: 2;
+	opacity: .7;
+	background-color: $light;
+	width: 100%;
+	height: 78px;
+	border-bottom: 2px solid $c-blue-light;
+	top: 0;
+
+	&__img {
+		padding-top: 12px;
+		display: block;
+		opacity: .5;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		img {
+			width: 754px;
+		}
+	}
+}
+
+.news {
+
+	&-item {
+
+		&__img {
+			background-position: 3px 3px;
+			background-repeat: no-repeat;
+			background-size: 98%;
+
+			&:hover {
+				opacity: .75;
+			}
+		}
+
+		&__date {
+			text-transform: uppercase;
+			@include georgia;
+			color: $c-navy;
+			letter-spacing: .07em;
+		}
+
+		&__title {
+			color: $c-red;
+			@include georgia;
+			font-size: 22px;
+			text-decoration: none;
+
+			&:hover {
+				color: $c-navy;
+			}
+		}
+
+		&__description {
+			font-size: 14px;
+			line-height: 1.5em;
+		}
+	}
+
+	&-more {
+		display: block;
+		margin: 40px 0;
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		color: $c-navy;
+		text-decoration: none;
+		border: 2px solid $c-navy;
+		padding: 15px 0;
+
+		&:hover {
+			background-color: $light;
+			border-color: $c-red;
+			color: $c-red;
+		}
+	}
+}
+
+.i-jury {
+	background-image: url(../i/pttrn_blue.png);
+
+	&__item {
+		text-align: center;
+	}
+
+	&__photo {
+		border-radius: 60px;
+		border: 2px solid $c-navy;
+		@include tr-03;
+
+		&:hover {
+			border-color: $c-red;
+		}
+
+		a {
+			border: 1px solid $light;
+			background-size: cover;
+			background-position: center;
+		}
+	}
+
+	&__title {
+		@include georgia;
+		font-size: 20px;
+		text-decoration: none;
+		color: $c-navy;
+
+		&:hover {
+			color: $c-red;
+		}
+	}
+
+	&__description {
+		font-size: 13px;
+		line-height: 1.5em;
+	}
+}
+
+.info-parthners {
+	background-image: url(../i/pttrn_gray.png);
+
+	&__title {
+		font-size: 18px;
+		text-align: center;
+		color: $c-navy;
+		line-height: 1.5em;
+	}
+}

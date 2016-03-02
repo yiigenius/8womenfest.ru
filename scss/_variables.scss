@@ -1,0 +1,40 @@
+// Colors ///////////////////////////////////
+
+$light:           #fff;
+$dark:            #000;
+$c-red:           #c90c0f;
+$c-navy:          #043844;
+$c-blue-light:    #b9cfd4;
+
+// Mixins //////////////////////////////////
+
+@mixin tr-01 {transition: all 0.1s ease;}
+@mixin tr-02 {transition: all 0.2s ease;}
+@mixin tr-03 {transition: all 0.3s ease;}
+
+@mixin georgia {font-family: Georgia, "Times New Roman", Times, serif;}
+@mixin verdana {font-family: Verdana, Arial, Helvetica, sans-serif}
+
+// Sizes ////////////////////////////////////
+
+$XS:	480px;
+$S:		768px;
+$M:		1024px;
+$L:		1170px;
+
+// Media queries  //////////////////////////
+
+@mixin MQ($canvas) {
+  @if $canvas == XS {
+   @media only screen and (max-width: $XS) { @content; } 
+  }
+  @else if $canvas == S {
+   @media only screen and (max-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (max-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (max-width: $L) { @content; } 
+  }
+}
